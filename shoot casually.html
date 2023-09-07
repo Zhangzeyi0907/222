@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+	<title>随手拍的一些风景</title>
+<link href="css/菜单.css" rel="stylesheet" type="text/css">
+<link href="css/fengjing.css" rel="stylesheet" type="text/css">
+		<link href="css/head.css" rel="stylesheet" type="text/css">
+	<base target="_blank">
+<script type="text/javascript" src="js/shubiaoxiaoguo.js"></script>	    
+	<script type="text/javascript" src="js/mouse click.js"></script>
+
+</head>
+<body  class="js-cursor-container">
+<ul id="nav">
+<!-- 班级属性要打上dropdown才能出现下拉窗 -->
+ <li width="30px">&emsp;&emsp;</li>
+ <li align="center" class="dropdown">
+	<a href="" class="dropbth" title="菜单" target="_self">菜单</a>
+		<div class="dropdown-content">
+			<a href="index video.html" title="视频预览页">视频预览页</a>
+			<a href="copy.html" title="文案" target="_self">文案</a>
+			<a href="shoot casually.html" title="上传一些自己家乡随手拍的风景叭！"   class="dangqiansz"  target="_self">随手拍</a>
+			<a href="javascript:void(0)" onclick="musick()" title="DJ、emo各种音乐" target="_self">音乐专区</a>
+			<a href="javascript:void(0)" onclick="aaa()" title="快来联系我！！！" target="_self">联系我</a>
+			<a href="javascript:void(0)" onclick="a()" title="注册"  target="_self">注册</a>
+			<a href="avascript:void(0)" onclick="c()" title="登录" target="_self">登录</a></li>
+		</div>
+		</li>
+<!-- &emsp;是空白符 -->
+  <li width="30px">&emsp;&emsp;</li>
+  <li class="hengxiang"><a  href="index.html" title="主页"  target="_self">主页</a></li>
+    <li class="hengxiang"><a href="copy.html" title="文案"  target="_self">文案</a></li>
+  <li class="hengxiang"><a href="shoot casually.html" title="上传一些自己家乡随手拍的风景叭！"   class="dangqiansz" target="_self">随手拍</a></li>
+	
+  <li align="center" class="dropdown" style="float:right"><a href="#" class="dropbth" title="注册/登录" target="_self">小窗口</a>
+		<div class="dropdown-content">
+<a href="javascript:void(0)" onclick="aaa()" title="帮助/联系我" target="_self">联系我</a>
+<a href="javascript:void(0)" onclick="musick()" title="音乐专区" target="_self">音乐专区</a>
+<a href="javascript:void(0)" onclick="rec()" title="点我显示hello" target="_self">点我试试</a>
+			</div></li>
+
+
+  <li align="center" class="dropdown" style="float:right"><a href="#" class="dropbth" title="注册/登录" target="_self">注册/登录</a>
+		<div class="dropdown-content">
+			<a href="javascript:void(0)" onclick="a()" title="注册" target="_self">注册</a>
+
+			<a href="javascript:void(0)" onclick="c()" title="登录" target="_self">登录</a>
+			</div></li>
+
+</ul>
+
+
+
+<marquee onmouseover="this.stop()" onmouseleave="this.start()" style="font-size:6px">欢迎您来访问张泽艺小哥哥所制作的网站！本网站由：WWW.我们.love 独家冠名播出</marquee>
+<h4 align="center">欢迎来到我的随手拍</h4>
+</body>
+<body>
+<div class="head"></div>
+	
+	<div id="注册"  onload="getValidataCode()">
+	<form name="userfrm" method="post" action="index.html"  target="_self" onsubmit="return check()">
+	<p><ul><li class="liysj"><a href="javascript:void(0)" onclick="b()" class="ysj" target="_self">关闭</a></li></ul></p>
+	<marquee onmouseover="this.stop()" onmouseleave="this.start()" bgcolor="#E311C9">欢迎来到张泽艺小哥哥所制作的注册页面！！！</marquee>
+
+	<p class="zcp">账号：<input type="text" name="zhangzeyi" checked  placeholder="输入账号" autofocus="autofocus"/></p>
+	<p class="zcp">输入密码：<input type="password" name="pass"  placeholder="输入5-12位的密码" /></p>
+	<p class="zcp">确认密码：<input type="password" name="rpass" placeholder="再次输入密码" /></p>
+	<p class="zcp">出生日期：<input type="date"/></p>
+	<p class="zcp">哪里人：
+		<input type="text"/  maxlength="6" size="4" placeholder="输入省份">省
+		<input type="text"/  maxlength="8" size="4" placeholder="输入市">市
+		<input type="text"/  maxlength="8" size="4" placeholder="输入区/县">区/县</select></p>
+	<p class="zcp">性别：<input type="radio"/ name="gen"><img src="img/nan.gif">男
+					   <input type="radio"/ name="gen"><img src="img/nv.gif">女</p>
+	<p class="zcp">请输入手机号：<input  type="text" placeholder="输入11位手机号">
+	<p class="zcp">请输入验证码：<input name="code1" type="text" size="4" maxlength="4" placeholder="输入验证码"/>
+						<input name="code2" id="code2" type="text" size="4" maxlength="4"  value="1314"/ readonly>
+						<input type="button" value="刷新" onclick="getValidataCode()"/></p>
+<input type="reset" /> <input type="submit" / value="登录主页"></form>
+</div>
+
+<div id="登录">
+		<form name="zhanghao" method="mima"  target="_self" action="index.html" onsubmit="return denglu()">
+		<p><ul><li class="liysj">
+			<a href="javascript:void(0)" onclick="d()" class="ysj" class="liysj" target="_self">暂不登录</a></li></ul></p>
+			<marquee onmouseover="this.stop()" onmouseleave="this.start()" bgcolor="#E311C9">欢迎来到张泽艺小哥哥所制作的注册页面！！！</marquee>	
+		<div class="kuaijuzhong">
+		<p class="zcp" >账号：<input type="text" placeholder="点击输入账号" autofocus="autofocus"/></p>
+		<p class="zcp" >密码：<input type="password" placeholder="点击输入密码"/></p>
+		<p class="zcbddl"><input type="submit"  value="登录"/>
+		</div></form>
+	</form>
+</div>
+
+<div id="tanchuang2">
+	<p><ul><li><a href="javascript:void(0)" onclick="bbb()"  target="_self">关闭</a></li></ul></p>
+		<h3 class="h3">本人联系方式<br/>电子邮箱:<br/>3496268452@qq.com</h3>
+</div>
+
+<div id="fdhz">
+	<p><ul><li><a href="javascript:void(0)" onclick="musicg()"  target="_self">关闭</a></li></ul></p>
+		<marquee scrollamount=20 direction="up"  onmouseover=this.stop() onmouseout=this.start()>
+		 <audio controls="controls" title="播放缺氧">
+			<source src="music/mp3/缺氧.mp3" type="audio/mpeg">
+			<embed height="100" width="100" src="music/mp3/缺氧.mp3"/></audio> 
+		 <audio controls="controls" title="播放沦陷">
+			<source src="music/mp3/沦陷.mp3" type="audio/mpeg">
+		<embed height="100" width="100" src="music/mp3/沦陷.mp3"/></audio> 
+		 <audio controls="controls" title="播放泡沫">
+			<source src="music/mp3/泡沫.mp3" type="audio/mpeg">
+		<embed height="100" width="100" src="music/mp3/泡沫.mp3"/></audio> 
+		 <audio controls="controls" title="播放还是分开">
+			<source src="music/mp3/还是分开.mp3" type="audio/mpeg">
+		<embed height="100" width="100" src="music/mp3/还是分开.mp3"/></audio>  
+		 <audio controls="controls" title="播放缺氧">
+			<source src="music/mp3/缺氧.mp3" type="audio/mpeg">
+		<embed height="100" width="100" src="music/mp3/缺氧.mp3"/></audio> 
+		 <audio controls="controls" title="播放沦陷">
+			<source src="music/mp3/沦陷.mp3" type="audio/mpeg">
+		<embed height="100" width="100" src="music/mp3/沦陷.mp3"/></audio> 
+		 <audio controls="controls" title="播放泡沫">
+			<source src="music/mp3/泡沫.mp3" type="audio/mpeg">
+		<embed height="100" width="100" src="music/mp3/泡沫.mp3"/></audio> 
+		 <audio controls="controls" title="播放还是分开">
+			<source src="music/mp3/还是分开.mp3" type="audio/mpeg">
+		<embed height="100" width="100" src="music/mp3/还是分开.mp3"/></audio> 
+		 <audio controls="controls" title="播放落单恋人">
+			<source src="music/mp3/落单恋人.mp3" type="audio/mpeg">
+		<embed height="100" width="100" src="music/mp3/落单恋人.mp3"/></audio> 
+		 <audio controls="controls" title="播放缺氧">
+			<source src="music/mp3/缺氧.mp3" type="audio/mpeg">
+		<embed height="100" width="100" src="music/mp3/缺氧.mp3"/></audio> 
+		 <audio controls="controls" title="播放沦陷">
+			<source src="music/mp3/沦陷.mp3" type="audio/mpeg">
+		<embed height="100" width="100" src="music/mp3/沦陷.mp3"/></audio> 
+		 <audio controls="controls" title="播放泡沫">
+			<source src="music/mp3/泡沫.mp3" type="audio/mpeg">
+		<embed height="100" width="100" src="music/mp3/泡沫.mp3"/></audio> 
+		 <audio controls="controls" title="播放还是分开">
+			<source src="music/mp3/还是分开.mp3" type="audio/mpeg">
+		<embed height="100" width="100" src="music/mp3/还是分开.mp3"/></audio> 
+		 <audio controls="controls" title="播放落单恋人">
+			<source src="music/mp3/落单恋人.mp3" type="audio/mpeg">
+		<embed height="100" width="100" src="music/mp3/落单恋人.mp3"/></audio> 
+		 <audio controls="controls" title="播放缺氧">
+			<source src="music/mp3/缺氧.mp3" type="audio/mpeg">
+		<embed height="100" width="100" src="music/mp3/缺氧.mp3"/></audio> 
+		 <audio controls="controls" title="播放沦陷">
+			<source src="music/mp3/沦陷.mp3" type="audio/mpeg">
+		<embed height="100" width="100" src="music/mp3/沦陷.mp3"/></audio> 
+		 <audio controls="controls" title="播放泡沫">
+			<source src="music/mp3/泡沫.mp3" type="audio/mpeg">
+		<embed height="100" width="100" src="music/mp3/泡沫.mp3"/></audio> 
+		 <audio controls="controls" title="播放还是分开">
+			<source src="music/mp3/还是分开.mp3" type="audio/mpeg">
+		<embed height="100" width="100" src="music/mp3/还是分开.mp3"/></audio> 
+		 <audio controls="controls" title="播放落单恋人">
+			<source src="music/mp3/落单恋人.mp3" type="audio/mpeg">
+		<embed height="100" width="100" src="music/mp3/落单恋人.mp3"/></audio> 
+		 <audio controls="controls" title="播放缺氧">
+			<source src="music/mp3/缺氧.mp3" type="audio/mpeg">
+		<embed height="100" width="100" src="music/mp3/缺氧.mp3"/></audio> 
+		 <audio controls="controls" title="播放沦陷">
+			<source src="music/mp3/沦陷.mp3" type="audio/mpeg">
+		<embed height="100" width="100" src="music/mp3/沦陷.mp3"/></audio> 
+		 <audio controls="controls" title="播放泡沫">
+			<source src="music/mp3/泡沫.mp3" type="audio/mpeg">
+		<embed height="100" width="100" src="music/mp3/泡沫.mp3"/></audio> 
+		 <audio controls="controls" title="播放还是分开">
+			<source src="music/mp3/还是分开.mp3" type="audio/mpeg">
+		<embed height="100" width="100" src="music/mp3/还是分开.mp3"/></audio> 
+		 <audio controls="controls" title="播放落单恋人">
+			<source src="music/mp3/落单恋人.mp3" type="audio/mpeg">
+		<embed height="100" width="100" src="music/mp3/落单恋人.mp3"/></audio> 
+		 <audio controls="controls" title="播放缺氧">
+			<source src="music/mp3/缺氧.mp3" type="audio/mpeg">
+		<embed height="100" width="100" src="music/mp3/缺氧.mp3"/></audio> 
+		 <audio controls="controls" title="播放沦陷">
+			<source src="music/mp3/沦陷.mp3" type="audio/mpeg">
+		<embed height="100" width="100" src="music/mp3/沦陷.mp3"/></audio> 
+		 <audio controls="controls" title="播放泡沫">
+			<source src="music/mp3/泡沫.mp3" type="audio/mpeg">
+		<embed height="100" width="100" src="music/mp3/泡沫.mp3"/></audio> 
+		 <audio controls="controls" title="播放还是分开">
+			<source src="music/mp3/还是分开.mp3" type="audio/mpeg">
+		<embed height="100" width="100" src="music/mp3/还是分开.mp3"/></audio> 
+		 <audio controls="controls" title="播放落单恋人">
+			<source src="music/mp3/落单恋人.mp3" type="audio/mpeg">
+		<embed height="100" width="100" src="music/mp3/落单恋人.mp3"/></audio> 
+		 <audio controls="controls" title="播放缺氧">
+			<source src="music/mp3/缺氧.mp3" type="audio/mpeg">
+		<embed height="100" width="100" src="music/mp3/缺氧.mp3"/></audio> 
+		 <audio controls="controls" title="播放沦陷">
+			<source src="music/mp3/沦陷.mp3" type="audio/mpeg">
+		<embed height="100" width="100" src="music/mp3/沦陷.mp3"/></audio> 
+		 <audio controls="controls" title="播放泡沫">
+			<source src="music/mp3/泡沫.mp3" type="audio/mpeg">
+		<embed height="100" width="100" src="music/mp3/泡沫.mp3"/></audio> 
+		 <audio controls="controls" title="播放还是分开">
+			<source src="music/mp3/还是分开.mp3" type="audio/mpeg">
+		<embed height="100" width="100" src="music/mp3/还是分开.mp3"/></audio> 
+		 <audio controls="controls" title="播放落单恋人">
+			<source src="music/mp3/落单恋人.mp3" type="audio/mpeg">
+		<embed height="100" width="100" src="music/mp3/落单恋人.mp3"/></audio> 
+		 <audio controls="controls" title="播放缺氧">
+			<source src="music/mp3/缺氧.mp3" type="audio/mpeg">
+		<embed height="100" width="100" src="music/mp3/缺氧.mp3"/></audio> 
+		 <audio controls="controls" title="播放沦陷">
+			<source src="music/mp3/沦陷.mp3" type="audio/mpeg">
+		<embed height="100" width="100" src="music/mp3/沦陷.mp3"/></audio> 
+		 <audio controls="controls" title="播放泡沫">
+			<source src="music/mp3/泡沫.mp3" type="audio/mpeg">
+		<embed height="100" width="100" src="music/mp3/泡沫.mp3"/></audio> 
+		 <audio controls="controls" title="播放还是分开">
+			<source src="music/mp3/还是分开.mp3" type="audio/mpeg">
+		<embed height="100" width="100" src="music/mp3/还是分开.mp3"/></audio> 
+		 <audio controls="controls" title="播放落单恋人">
+			<source src="music/mp3/落单恋人.mp3" type="audio/mpeg">
+		<embed height="100" width="100" src="music/mp3/落单恋人.mp3"/></audio> 
+		 <audio controls="controls" title="播放缺氧">
+			<source src="music/mp3/缺氧.mp3" type="audio/mpeg">
+		<embed height="100" width="100" src="music/mp3/缺氧.mp3"/></audio> 
+		 <audio controls="controls" title="播放沦陷">
+			<source src="music/mp3/沦陷.mp3" type="audio/mpeg">
+		<embed height="100" width="100" src="music/mp3/沦陷.mp3"/></audio> 
+		 <audio controls="controls" title="播放泡沫">
+			<source src="music/mp3/泡沫.mp3" type="audio/mpeg">
+		<embed height="100" width="100" src="music/mp3/泡沫.mp3"/></audio> 
+		 <audio controls="controls" title="播放落单恋人">
+			<source src="music/mp3/落单恋人.mp3" type="audio/mpeg">
+		<embed height="100" width="100" src="music/mp3/落单恋人.mp3"/></audio> 
+		 <audio controls="controls" title="播放缺氧">
+			<source src="music/mp3/缺氧.mp3" type="audio/mpeg">
+		<embed height="100" width="100" src="music/mp3/缺氧.mp3"/></audio> 
+		 <audio controls="controls" title="播放沦陷">
+			<source src="music/mp3/沦陷.mp3" type="audio/mpeg">
+		<embed height="100" width="100" src="music/mp3/沦陷.mp3"/></audio> 
+		 <audio controls="controls" title="播放泡沫">
+			<source src="music/mp3/泡沫.mp3" type="audio/mpeg">
+		<embed height="100" width="100" src="music/mp3/泡沫.mp3"/></audio> 
+		 <audio controls="controls" title="播放还是分开">
+			<source src="music/mp3/还是分开.mp3" type="audio/mpeg">
+		<embed height="100" width="100" src="music/mp3/还是分开.mp3"/></audio> 
+		 <audio controls="controls" title="播放落单恋人">
+			<source src="music/mp3/落单恋人.mp3" type="audio/mpeg">
+			</marquee></div>
+	
+<div class="banna">
+<img src="img/fengjing/天安门2021.7.10...1.1.jpg"  id="tiananmen" title="2021年7月10日，在北京天安门拍的照片 ">
+	<p class="wmszhqx" id="赤"><br/>我们生在红旗下，长在春风里。<br/>
+	<span id="黄">人民有信仰，国家有力量。<br/>
+	<span id="紫">目光所致皆为华夏，五星闪耀皆为信仰。</p></div> 
+<div class="banna2">
+<div class="ccgy1"><a href="img/fengjing/故宫博物馆2021.6.8...1.2.jpg"><img src="img/fengjing/故宫博物馆2021.6.8...1.2.jpg" class="ccgy11" title="故宫博物院-太和殿(点击观看原图)"></a>
+	<p>此照片拍摄地点是故宫博物院-太和殿<br/>拍摄时间是2021年6月8日的09:33</p>
+	</div>
+<div class="ccgy2"><a href="img/fengjing/故宫博物馆-午门2021.6.8...1.1.jpg"><img src="img/fengjing/故宫博物馆-午门2021.6.8...1.1.jpg"  class="ccgy11" title="故宫博物院-午门(点击观看原图)"></a>
+	<p>此照片拍摄地点是故宫博物院-午门<br/>拍摄时间是2021年6月8日的09:27</p>
+	</div></div>
+<div class="zynr1">
+	<div class="ccgy3"><a href="img/fengjing/天安门2021.7.10...1.1.jpg"">
+		<img src="img/fengjing/天安门2021.7.10...1.1.jpg"  class="ccgy123" title="天安门(点击观查看原图1)"></a>
+	<p class="ccgyp">此照片拍摄地点是北京市东城区-天安门<br/>拍摄时间是2021年07月20日的18:10</p>
+	</div>
+	<div class="ccgy3"><a href="img/fengjing/tam1.2.jpg">
+		<img src="img/fengjing/tam1.2.jpg"  class="ccgy123" title="天安门(点击观查看原图2)"></a>
+	<p class="ccgyp">此照片拍摄地点是北京市东城区-天安门<br/>拍摄时间是2021年07月20日的18:03</p>
+	</div>
+<div class="ccgy3"><a href="img/fengjing/故宫博物馆2021.6.8...1.2.jpg"">
+	<img src="img/fengjing/故宫博物馆2021.6.8...1.2.jpg"  class="ccgy123" title="故宫博物院-太和殿(点击观看原图)"></a>
+	<p class="ccgyp">此照片拍摄地点是故宫博物院-太和殿<br/>拍摄时间是2021年6月8日的09:33</p>
+  </div>
+	
+<div class="ccgy3"><a href="img/fengjing/故宫博物馆-午门2021.6.8...1.1.jpg">
+	<img src="img/fengjing/故宫博物馆-午门2021.6.8...1.1.jpg"  class="ccgy123" title="故宫博物院-午门(点击观看原图)"></a>
+	<p class="ccgyp">此照片拍摄地点是故宫博物院-午门<br/>拍摄时间是2021年6月8日的09:27</p>
+  </div>
+
+	<div class="ccgy3"><a href="img/fengjing/故宫博物馆2021.6.8...1.3.jpg">
+		<img src="img/fengjing/故宫博物馆2021.6.8...1.3.jpg"  class="ccgy123" title="东筒子夹道(点击观看原图)"></a>
+	<p class="ccgyp">此照片拍摄地点是故宫博物院-东简子夹道(阴阳路)<br/>拍摄时间是2021年6月8日的09:27</p>
+	</div>
+	<div class="ccgy3"><a href="img/fengjing/bjz.jpg">
+		<img src="img/fengjing/bjz.jpg"  class="ccgy123" title="北京西站(点击观看原图)"></a>
+	<p class="ccgyp">此照片拍摄地点是北京西站<br/>拍摄时间是2021年08月23日的 02:36</p>
+	</div>
+<div class="ccgy3"><a href="img/fengjing/tamzp1.jpg">
+	<img src="img/fengjing/tamzp1.jpg" class="ccgy123" title="天安门自拍(点击观看原图1)"></a>
+	<p class="ccgyp">此照片拍摄地点是天安门<br/>拍摄时间是2021年07月20日的 18:08</p>
+  </div>
+
+<div class="ccgy3"><a href="img/fengjing/tamzp2.jpg">
+	<img src="img/fengjing/tamzp2.jpg"  class="ccgy123" title="天安门自拍(点击观看原图2)"></a>
+	<p class="ccgyp">此照片拍摄地点是天安门<br/>拍摄时间是2021年07月20日的 18:08</p>
+  </div>
+
+<div class="ccgy3"><a href="img/fengjing/飞机上的某城市夜景2022.5.15.jpg">
+	<img src="img/fengjing/飞机上的某城市夜景2022.5.15.jpg" class="ccgy123" title="飞机上的夜景(点击观看原图)"></a>
+	<p class="ccgyp">此照片拍摄地点是天上<br/>拍摄时间是2022年05月14日的 22:56</p>
+  </div>
+
+<div class="ccgy3"><a href="img/fengjing/鸟巢2021.5.26...1.1.jpg">
+	<img src="img/fengjing/鸟巢2021.5.26...1.1.jpg"  class="ccgy123" title="鸟巢(点击观看原图)"></a>
+	<p class="ccgyp">此照片拍摄地点是鸟巢<br/>拍摄时间是2021年05月26日的 20:54</p>
+  </div>
+<div class="ccgy3"><a href="img/fengjing/鸟巢2021.5.26...1.2.jpg">
+	<img src="img/fengjing/鸟巢2021.5.26...1.2.jpg"  class="ccgy123" title="鸟巢(点击观看原图2)"></a>
+	<p class="ccgyp">此照片拍摄地点是鸟巢<br/>拍摄时间是2021年05月26日的 21:19</p>
+  </div>
+<div class="ccgy3"><a href="img/fengjing/广东深圳光明区公明2022.5.27...1.2.jpg">
+	<img src="img/fengjing/广东深圳光明区公明2022.5.27...1.2.jpg" class="ccgy123" title="深圳公明某河(点击观看原图)"></a>
+	<p class="ccgyp">此照片拍摄地点是深圳公明洋涌河(西田路桥南)<br/>拍摄时间是2022年05月16日的 12:16</p>
+  </div>	
+	<div class="ccgy3"><a href="img/fengjing/广东深圳光明区公明2022.5.27.jpg">
+		<img src="img/fengjing/广东深圳光明区公明2022.5.27.jpg" class="ccgy123" title="深圳公明洋涌河(点击观看原图)"></a>
+	<p class="ccgyp">此照片拍摄地点是深圳公明洋涌河(西田路桥北)<br/>拍摄时间是2022年05月16日的 12:41</p>
+	</div>
+<div class="ccgy3"><a href="img/fengjing/广东深圳民治村2022.5.27...1.2.jpg">
+	<img src="img/fengjing/广东深圳民治村2022.5.27...1.2.jpg" class="ccgy123" title="深圳民治村(点击观看原图)"></a>
+	<p class="ccgyp">此照片拍摄地点是深圳民治村<br/>拍摄时间是2022年05月27日的 11:55</p>
+  </div>
+<div class="ccgy3"><a href="img/fengjing/广东深圳民治村2022.5.27.jpg">
+	<img src="img/fengjing/广东深圳民治村2022.5.27.jpg"  class="ccgy123" title="深圳民治村(点击观看原图2)"></a>
+	<p class="ccgyp">此照片拍摄地点是深圳民治村<br/>拍摄时间是2022年05月27日的 11:55</p>
+  </div>
+<div class="ccgy3"><a href="img/fengjing/广东深圳光明区公明2022.5.27...1.jpg"><img src="img/fengjing/广东深圳光明区公明2022.5.27...1.3.jpg"  class="ccgy123" title="洋涌河夜景(点击观看原图)"></a>
+
+	<p class="ccgyp">此照片拍摄地点是公明洋涌河(西田路桥北)<br/>拍摄时间是2022年05月27日的 23:10</p>
+  </div>
+<div class="ccgy3"><a href="img/fengjing/宿家庄水库2021.12.13.jpg">
+	<img src="img/fengjing/宿家庄水库2021.12.13.jpg"  class="ccgy123" title="水库(点击观看原图)"></a>
+	<p class="ccgyp">此照片拍摄地点是保定宿家庄水库<br/>拍摄时间是2021年12月13日的 12:07</p>
+  </div>
+<div class="ccgy3"><a href="img/fengjing/宿家庄水库2022.6.10.jpg">
+	<img src="img/fengjing/宿家庄水库2022.6.10.jpg"  class="ccgy123" title="此照片拍摄于2020年11月21日早上8点34分"></a>
+	<p class="ccgyp">此照片拍摄地点是保定宿家庄水库<br/>拍摄时间是2022年06月10日的 18:45</p>
+  </div>
+<div class="ccgy3"><a href="img/fengjing/飞机上的某城市夜景2022.5.15.jpg">
+	<img src="img/fengjing/飞机上的某城市夜景2022.5.15.jpg"  class="ccgy123" title="此照片拍摄于2020年11月21日早上8点34分"></a>
+	<p class="ccgyp">拍摄地点是天上<br/>拍摄时间是2022年05月15日的 01:18</p>
+  </div>
+
+<div class="ccgy3"><a href="img/fengjing/飞机降落.MP4">
+	<img src="img/fengjing/飞机上的某城市夜景2022.5.15.jpg" class="ccgy123" title="飞机降落(点击观看原视频)"></a>
+	<p class="ccgyp">此<b>视频</b>拍摄地点是深圳宝安机场<br/>拍摄时间是2022年05月15日的 01:22</p>
+  </div>
+<div class="ccgy3"><a href="img/fengjing/天津海河附近2022.2.18...1.2.jpg">
+	<img src="img/fengjing/天津海河附近2022.2.18...1.2.jpg" class="ccgy123" title="天津海河附近的小夜景(点击查看原图2)"></a>
+	<p class="ccgyp">此照片拍摄地点是天津海河附近夜景<br/>拍摄时间是2022年02月18日的 23:25</p>
+  </div>
+<div class="ccgy3"><a href="img/fengjing/天津海河附近2022.2.18...1.3.jpg">
+	<img src="img/fengjing/天津海河附近2022.2.18...1.3.jpg" class="ccgy123" title="天津海河附近的小夜景(点击查看原图3)"></a>
+	<p class="ccgyp">此照片拍摄地点是天津海河附近夜景<br/>拍摄时间是2022年02月18日的 23:24</p>
+  </div>
+<div class="ccgy3"><a href="img/fengjing/天津海河附近2022.2.18...1.4.jpg">
+	<img src="img/fengjing/天津海河附近2022.2.18...1.4.jpg" class="ccgy123" title="天津海河附近的小夜景(点击查看原图4)"></a>
+	<p class="ccgyp">此照片拍摄地点是天津海河附近夜景<br/>拍摄时间是2022年02月18日的 22:29</p>
+  </div>
+<div class="ccgy3"><a href="img/fengjing/天津海河附近2022.2.18...1.6.jpg">
+	<img src="img/fengjing/天津海河附近2022.2.18...1.6.jpg" class="ccgy123" title="天津海河附近的小夜景(点击查看原图5)"></a>
+	<p class="ccgyp">此照片拍摄地点是天津海河附近夜景<br/>拍摄时间是2022年02月18日的 22:42</p>
+  </div>
+<div class="ccgy3"><a href="img/fengjing/天津解放桥附近2022.2.18...1.3.jpg">
+	<img src="img/fengjing/天津解放桥附近2022.2.18...1.3.jpg"  class="ccgy123" title="天津解放桥世纪钟夜景(点击查看原图)"></a>
+	<p class="ccgyp">此照片拍摄地点是天津解放桥附近夜景<br/>拍摄时间是2022年02月18日的 21:54</p>
+  </div>
+<div class="ccgy3"><a href="img/fengjing/天津解放桥附近2022.2.18...1.4.jpg">
+	<img src="img/fengjing/天津解放桥附近2022.2.18...1.4.jpg"  class="ccgy123" title="天津解放桥世纪钟夜景(点击查看原图)"></a>
+	<p class="ccgyp">此照片拍摄地点是天津解放桥附近夜景<br/>拍摄时间是2022年02月18日的 23:52</p>
+  </div>
+<div class="ccgy3"><a href="img/fengjing/天津世纪钟2022.2.18...1.1.jpg">
+	<img src="img/fengjing/天津世纪钟2022.2.18...1.1.jpg"  class="ccgy123" title="天津世纪钟夜景(点击查看原图)"></a>
+	<p class="ccgyp">此照片拍摄地点是天津世纪钟附近夜景<br/>拍摄时间是2022年02月18日的 22:03</p>
+  </div>
+<div class="ccgy3"><a href="img/fengjing/天津世纪钟2022.2.18...1.2.jpg">
+	<img src="img/fengjing/天津世纪钟2022.2.18...1.2.jpg"  class="ccgy123" title="天津世纪钟(点击查看原图)"></a>
+	<p class="ccgyp">此照片拍摄地点是天津世纪钟附近夜景<br/>拍摄时间是2022年02月18日的 22:05</p>
+  </div>
+<div class="ccgy3"><a href="img/fengjing/我家2022.11.25.jpg">
+	<img src="img/fengjing/我家2022.11.25.jpg"  class="ccgy123" title="my house(点击查看原图)"></a>
+	<p class="ccgyp">此照片拍摄地点是保定市宿家庄村<br/>拍摄时间是2022年11月25日的 16:53</p>
+  </div>
+<div class="ccgy3"><a href="img/fengjing/西大洋水库2022.7.6.jpg">
+	<img src="img/fengjing/西大洋水库2022.7.6.jpg"  class="ccgy123" title="保定市西大洋水库-坡下村(点击查看原图)"></a>
+	<p class="ccgyp">此照片拍摄地点是保定西大洋水库-坡下村<br/>拍摄时间是2022年07月06日的 16:55</p>
+  </div>
+<div class="ccgy3"><a href="img/fengjing/西大洋水库大坝2023.2.4.jpg">
+	<img src="img/fengjing/西大洋水库大坝2023.2.4.jpg"  class="ccgy123" title="保定市西大洋水库大坝(点击查看原图)"></a>
+	<p class="ccgyp">此照片拍摄地点是保定市西大洋水库大坝<br/>拍摄时间是2023年02月04日的 17:47<br/>刚考完科四第二天本人开车去的</p>
+  </div>
+<div class="ccgy3"><a href="img/fengjing/长城公寓2020.11.21.jpg">
+	<img src="img/fengjing/长城公寓2020.11.21.jpg" class="ccgy123" title="保定市徐水区长城公寓(点击查看原图)"></a>
+	<p class="ccgyp">此照片拍摄地点是保定市徐水区长城公寓<br/>拍摄时间是2020年11月21日早上8点34分</p>
+  </div>
+<div class="ccgy3"><a href="img/fengjing/张家口某寺庙2022.7.12.jpg">
+	<img src="img/fengjing/张家口某寺庙2022.7.12.jpg" class="ccgy123" title="张家口某寺庙(点击查看原图)"></a>
+	<p class="ccgyp">此照片拍摄地点是张家口某寺庙<br/>拍摄时间是2022年07月12日的 13:55</p>
+  </div>
+<div class="ccgy3"><a href="img/fengjing/张家口东升酒店2022.7.21...1.2.jpg">
+	<img src="img/fengjing/张家口东升酒店2022.7.21...1.2.jpg" class="ccgy123" title="张家口小风景(点击查看原图)"></a>
+	<p class="ccgyp">此照片拍摄地点是张家口东升酒店11楼<br/>拍摄时间是2022年08月15日的 16:23</p>
+  </div>
+<div class="ccgy3"><a href="img/fengjing/北京朝阳区小营北路2021.6.16.jpg">
+	<img src="img/fengjing/北京朝阳区小营北路2021.6.16.jpg"  class="ccgy123" title="小营路雨夜景(点击查看原图)"></a>
+	<p class="ccgyp">此照片拍摄地点是北京小营路<br/>拍摄时间是2021年06月16日的 20:19</p>
+  </div>
+<div class="ccgy3"><a href="img/fengjing/shuilifangxy2021.5.25.jpg">
+	<img src="img/fengjing/shuilifangxy2021.5.25.jpg" class="ccgy123" title="水立方附近偷拍小姨(点击查看原图1)"></a>
+	<p class="ccgyp">此照片拍摄地点是水立方附近<br/>拍摄时间是2021年05月26日的 21:07</p>
+  </div>
+<div class="ccgy3"><a href="img/fengjing/shuilifangxy2021.5.25...1.1.jpg">
+	<img src="img/fengjing/shuilifangxy2021.5.25...1.1.jpg" class="ccgy123" title="鸟巢附近偷拍小姨(点击查看原图2)"></a>
+	<p class="ccgyp">此照片拍摄地点是鸟巢附近奥利匹克公园<br/>拍摄时间是2023年05月26日的 21:28</p>
+  </div>
+<div class="ccgy3"><a href="img/fengjing/shuilifangxy2021.5.25...1.2.jpg">
+	<img src="img/fengjing/shuilifangxy2021.5.25...1.2.jpg" class="ccgy123" title="鸟巢附近偷拍小姨(点击查看原图3)"></a>
+	<p class="ccgyp">此照片拍摄地点是鸟巢附近奥利匹克公园<br/>拍摄时间是2021年05月26日的 21:27</p>
+  </div>
+<div class="ccgy3"><a href="img/fengjing/bddy2023.6.7...1.1.jpg">
+	<img src="img/fengjing/bddy2023.6.7...1.1.jpg" class="ccgy123" title="保定电力职业技术学院小火烧云(点击查看原图)"></a>
+	<p class="ccgyp">此照片拍摄地点是保定电力职业技术学院<br/>拍摄时间是2023年06月07日的 19:51</p>
+  </div>
+<div class="ccgy3"><a href="img/fengjing/bddy2023.5.19..1.2.jpg">
+	<img src="img/fengjing/bddy2023.5.19..1.2.jpg" class="ccgy123" title="保定电力职业技术学院小夜景(点击查看原图)"></a>
+	<p class="ccgyp">此照片拍摄地点是保定电力职业技术学院<br/>拍摄时间是2023年05月19日的 20:41</p>
+  </div>
+	
+<div class="ccgy3"><a href="img/fengjing/唐县庆都山2022.1.30.jpg">
+	<img src="img/fengjing/唐县庆都山2022.1.30.jpg"  class="ccgy123" title="庆都山(点击查看原图)"></a>
+	<p class="ccgyp">此照片拍摄地点是保定市庆都山<br/>拍摄时间是2022年01月30日的 18:07</p>
+  </div>
+<div class="ccgy3"><a href="img/fengjing/宿家庄水库2021.12月.jpg">
+	<img src="img/fengjing/宿家庄水库2021.12月.jpg"  class="ccgy123" title="水库(点击查看原图2)"></a>
+	<p class="ccgyp">此照片拍摄地点是保定市宿家庄水库<br/>拍摄时间是2021年12月13日的 12:03</p>
+  </div>
+<div class="ccgy3"><a href="img/fengjing/广州站2022.6.2.jpg">
+	<img src="img/fengjing/广州站2022.6.2.jpg"  class="ccgy123" title="广州站(点击查看原图)"></a>
+	<p class="ccgyp">此照片拍摄地点是广州站<br/>拍摄时间是2022年06月2日的 16:35</p>
+  </div>
+<div class="ccgy3"><a href="img/fengjing/机场自拍2022.5.14...21.38.jpg">
+	<img src="img/fengjing/机场自拍2022.5.14...21.38.jpg"  class="ccgy123" title="机场自拍(点击查看原图)"></a>
+	<p class="ccgyp">此照片拍摄地点是石家庄机场<br/>拍摄时间是2022年05月14日的 21:38</p>
+  </div>
+</div>
+
+			<div class="plqss">
+			<p class="p">评<span id="zi">论</span><span id="lv">区</span><span id="huang">:</span></p>
+		<form action="#" method="post">
+		<div class="juzhong"><textarea rows="8" cols="150" placeholder="上传一下你认为很好看的风景叭!"></textarea>
+		上传照片：<input type="file" name="selfile" multiple/>
+			
+			</div><input type="submit" id="youxj">
+		</form>
+		</div>
+	
+
+	
+	<div class="footer">
+ <h2><font color="#FF1493">我的图片未完<br/>
+ 待续...</h2>
+<p id="footerp">此网站由张泽艺独家冠名播出</p>
+	 <input type="button" value="点击切换背景颜色" id="btn">
+	 </div>
+</body>
+	<script>
+var btn = document.getElementById("btn");
+var body = document.body;
+let array = [ "#ffff00", "#00ff00", "#00ffff","#ff0000", "#ff7f00", "#0000ff", "#8b00ff","#ffd700","#ff8c00","red", "blue", "yellow", "white", "black", "green", "orange","#20b2aa","#191970","#ff00ff","#ff69b4","#fff5ee","#f4a460","#d2691e","#e6e6fa","#fff0f5"];
+let index = 0;
+btn.onclick = function () {
+body.style.backgroundColor = array[index];
+index = (index + 1) % array.length;
+}
+</script>
+</html>

@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+	<title>文案</title>
+<link href="css/菜单.css" rel="stylesheet" type="text/css">
+<link href="css/彩色卡片.css" rel="stylesheet" type="text/css">
+	<link href="css/head.css" rel="stylesheet" type="text/css">
+
+<script type="text/javascript" src="js/shubiaoxiaoguo.js"></script>
+	    <script type="text/javascript" src="js/mouse click.js"></script>
+
+</head>
+<body  class="js-cursor-container">
+<ul id="nav">
+<!-- 班级属性要打上dropdown才能出现下拉窗 -->
+ <li width="30px">&emsp;&emsp;</li>
+ <li align="center" class="dropdown">
+	<a href="" class="dropbth" title="菜单" target="_self">菜单</a>
+		<div class="dropdown-content">
+			<a href="index video.html" title="视频预览页">视频预览页</a>
+			<a href="copy.html" title="文案"  class="dangqiansz" target="_self">文案</a>
+			<a href="shoot casually.html" title="上传一些自己家乡随手拍的风景叭！">随手拍</a>
+			<a href="javascript:void(0)" onclick="musick()" title="DJ、emo各种音乐" target="_self">音乐专区</a>
+			<a href="javascript:void(0)" onclick="aaa()" title="快来联系我！！！" target="_self">联系我</a>
+			<a href="javascript:void(0)" onclick="a()" title="注册"  target="_self">注册</a>
+			<a href="avascript:void(0)" onclick="c()" title="登录" target="_self">登录</a></li>
+		</div>
+		</li>
+<!-- &emsp;是空白符 -->
+  <li width="30px">&emsp;&emsp;</li>
+  <li class="hengxiang"><a  href="index.html" title="主页"  target="_self">主页</a></li>
+    <li class="hengxiang"><a href="copy.html" title="文案" class="dangqiansz"  target="_self">文案</a></li>
+  <li class="hengxiang"><a href="shoot casually.html" title="上传一些自己家乡随手拍的风景叭！"  target="_self">随手拍</a></li>
+	
+  <li align="center" class="dropdown" style="float:right"><a href="#" class="dropbth" title="注册/登录" target="_self">小窗口</a>
+		<div class="dropdown-content">
+<a href="javascript:void(0)" onclick="aaa()" title="帮助/联系我" target="_self">联系我</a>
+<a href="javascript:void(0)" onclick="musick()" title="音乐专区" target="_self">音乐专区</a>
+<a href="javascript:void(0)" onclick="rec()" title="点我显示hello" target="_self">点我试试</a>
+			</div></li>
+
+
+  <li align="center" class="dropdown" style="float:right"><a href="#" class="dropbth" title="注册/登录" target="_self">注册/登录</a>
+		<div class="dropdown-content">
+			<a href="javascript:void(0)" onclick="a()" title="注册" target="_self">注册</a>
+
+			<a href="javascript:void(0)" onclick="c()" title="登录" target="_self">登录</a>
+			</div></li>
+
+</ul>
+
+
+
+<marquee onmouseover="this.stop()" onmouseleave="this.start()" style="font-size:6px">欢迎您来访问张泽艺小哥哥所制作的网站！本网站由：WWW.我们.love 独家冠名播出</marquee>
+<h4 align="center">欢迎来到我们.love</h4>
+
+
+<div id="注册"  onload="getValidataCode()">
+	<form name="userfrm" method="post" action="index.html"  target="_self" onsubmit="return check()">
+	<p><ul><li class="liysj"><a href="javascript:void(0)" onclick="b()" class="ysj" target="_self">关闭</a></li></ul></p>
+	<marquee onmouseover="this.stop()" onmouseleave="this.start()" bgcolor="#E311C9">欢迎来到张泽艺小哥哥所制作的注册页面！！！</marquee>
+
+	<p class="zcp">账号：<input type="text" name="zhangzeyi" checked  placeholder="输入账号" autofocus="autofocus"/></p>
+	<p class="zcp">输入密码：<input type="password" name="pass"  placeholder="输入5-12位的密码" /></p>
+	<p class="zcp">确认密码：<input type="password" name="rpass" placeholder="再次输入密码" /></p>
+	<p class="zcp">出生日期：<input type="date"/></p>
+	<p class="zcp">哪里人：
+		<input type="text"/  maxlength="6" size="4" placeholder="输入省份">省
+		<input type="text"/  maxlength="8" size="4" placeholder="输入市">市
+		<input type="text"/  maxlength="8" size="4" placeholder="输入区/县">区/县</select></p>
+	<p class="zcp">性别：<input type="radio"/ name="gen"><img src="img/nan.gif">男
+					   <input type="radio"/ name="gen"><img src="img/nv.gif">女</p>
+	<p class="zcp">请输入手机号：<input  type="text" placeholder="输入11位手机号">
+	<p class="zcp">请输入验证码：<input name="code1" type="text" size="4" maxlength="4" placeholder="输入验证码"/>
+						<input name="code2" id="code2" type="text" size="4" maxlength="4"  value="1314"/ readonly>
+						<input type="button" value="刷新" onclick="getValidataCode()"/></p>
+<input type="reset" /> <input type="submit" / value="登录主页"></form>
+</div>
+
+<div id="登录">
+		<form name="zhanghao" method="mima"  target="_self" action="index.html" onsubmit="return denglu()">
+		<p><ul><li class="liysj">
+			<a href="javascript:void(0)" onclick="d()" class="ysj" class="liysj" target="_self">暂不登录</a></li></ul></p>
+			<marquee onmouseover="this.stop()" onmouseleave="this.start()" bgcolor="#E311C9">欢迎来到张泽艺小哥哥所制作的注册页面！！！</marquee>	
+		<div class="kuaijuzhong">
+		<p class="zcp" >账号：<input type="text" placeholder="点击输入账号" autofocus="autofocus"/></p>
+		<p class="zcp" >密码：<input type="password" placeholder="点击输入密码"/></p>
+		<p class="zcbddl"><input type="submit"  value="登录"/>
+		</div></form>
+</div>
+
+<div id="tanchuang2">
+	<p><ul><li><a href="javascript:void(0)" onclick="bbb()"  target="_self">关闭</a></li></ul></p>
+		<h3 class="h3">本人联系方式<br/>电子邮箱:<br/>3496268452@qq.com</h3>
+
+</div>
+
+
+
+<div id="fdhz">
+	<p><ul><li><a href="javascript:void(0)" onclick="musicg()"  target="_self">关闭</a></li></ul></p>
+		<marquee scrollamount=20 direction="up"  onmouseover=this.stop() onmouseout=this.start()>
+		 <audio controls="controls" title="播放缺氧">
+			<source src="music/mp3/缺氧.mp3" type="audio/mpeg">
+			<embed height="100" width="100" src="music/mp3/缺氧.mp3"/></audio> 
+		 <audio controls="controls" title="播放沦陷">
+			<source src="music/mp3/沦陷.mp3" type="audio/mpeg">
+		<embed height="100" width="100" src="music/mp3/沦陷.mp3"/></audio> 
+		 <audio controls="controls" title="播放泡沫">
+			<source src="music/mp3/泡沫.mp3" type="audio/mpeg">
+		<embed height="100" width="100" src="music/mp3/泡沫.mp3"/></audio> 
+		 <audio controls="controls" title="播放还是分开">
+			<source src="music/mp3/还是分开.mp3" type="audio/mpeg">
+		<embed height="100" width="100" src="music/mp3/还是分开.mp3"/></audio>  
+		 <audio controls="controls" title="播放缺氧">
+			<source src="music/mp3/缺氧.mp3" type="audio/mpeg">
+		<embed height="100" width="100" src="music/mp3/缺氧.mp3"/></audio> 
+		 <audio controls="controls" title="播放沦陷">
+			<source src="music/mp3/沦陷.mp3" type="audio/mpeg">
+		<embed height="100" width="100" src="music/mp3/沦陷.mp3"/></audio> 
+		 <audio controls="controls" title="播放泡沫">
+			<source src="music/mp3/泡沫.mp3" type="audio/mpeg">
+		<embed height="100" width="100" src="music/mp3/泡沫.mp3"/></audio> 
+		 <audio controls="controls" title="播放还是分开">
+			<source src="music/mp3/还是分开.mp3" type="audio/mpeg">
+		<embed height="100" width="100" src="music/mp3/还是分开.mp3"/></audio> 
+		 <audio controls="controls" title="播放落单恋人">
+			<source src="music/mp3/落单恋人.mp3" type="audio/mpeg">
+		<embed height="100" width="100" src="music/mp3/落单恋人.mp3"/></audio> 
+		 <audio controls="controls" title="播放缺氧">
+			<source src="music/mp3/缺氧.mp3" type="audio/mpeg">
+		<embed height="100" width="100" src="music/mp3/缺氧.mp3"/></audio> 
+		 <audio controls="controls" title="播放沦陷">
+			<source src="music/mp3/沦陷.mp3" type="audio/mpeg">
+		<embed height="100" width="100" src="music/mp3/沦陷.mp3"/></audio> 
+		 <audio controls="controls" title="播放泡沫">
+			<source src="music/mp3/泡沫.mp3" type="audio/mpeg">
+		<embed height="100" width="100" src="music/mp3/泡沫.mp3"/></audio> 
+		 <audio controls="controls" title="播放还是分开">
+			<source src="music/mp3/还是分开.mp3" type="audio/mpeg">
+		<embed height="100" width="100" src="music/mp3/还是分开.mp3"/></audio> 
+		 <audio controls="controls" title="播放落单恋人">
+			<source src="music/mp3/落单恋人.mp3" type="audio/mpeg">
+		<embed height="100" width="100" src="music/mp3/落单恋人.mp3"/></audio> 
+		 <audio controls="controls" title="播放缺氧">
+			<source src="music/mp3/缺氧.mp3" type="audio/mpeg">
+		<embed height="100" width="100" src="music/mp3/缺氧.mp3"/></audio> 
+		 <audio controls="controls" title="播放沦陷">
+			<source src="music/mp3/沦陷.mp3" type="audio/mpeg">
+		<embed height="100" width="100" src="music/mp3/沦陷.mp3"/></audio> 
+		 <audio controls="controls" title="播放泡沫">
+			<source src="music/mp3/泡沫.mp3" type="audio/mpeg">
+		<embed height="100" width="100" src="music/mp3/泡沫.mp3"/></audio> 
+		 <audio controls="controls" title="播放还是分开">
+			<source src="music/mp3/还是分开.mp3" type="audio/mpeg">
+		<embed height="100" width="100" src="music/mp3/还是分开.mp3"/></audio> 
+		 <audio controls="controls" title="播放落单恋人">
+			<source src="music/mp3/落单恋人.mp3" type="audio/mpeg">
+		<embed height="100" width="100" src="music/mp3/落单恋人.mp3"/></audio> 
+		 <audio controls="controls" title="播放缺氧">
+			<source src="music/mp3/缺氧.mp3" type="audio/mpeg">
+		<embed height="100" width="100" src="music/mp3/缺氧.mp3"/></audio> 
+		 <audio controls="controls" title="播放沦陷">
+			<source src="music/mp3/沦陷.mp3" type="audio/mpeg">
+		<embed height="100" width="100" src="music/mp3/沦陷.mp3"/></audio> 
+		 <audio controls="controls" title="播放泡沫">
+			<source src="music/mp3/泡沫.mp3" type="audio/mpeg">
+		<embed height="100" width="100" src="music/mp3/泡沫.mp3"/></audio> 
+		 <audio controls="controls" title="播放还是分开">
+			<source src="music/mp3/还是分开.mp3" type="audio/mpeg">
+		<embed height="100" width="100" src="music/mp3/还是分开.mp3"/></audio> 
+		 <audio controls="controls" title="播放落单恋人">
+			<source src="music/mp3/落单恋人.mp3" type="audio/mpeg">
+		<embed height="100" width="100" src="music/mp3/落单恋人.mp3"/></audio> 
+		 <audio controls="controls" title="播放缺氧">
+			<source src="music/mp3/缺氧.mp3" type="audio/mpeg">
+		<embed height="100" width="100" src="music/mp3/缺氧.mp3"/></audio> 
+		 <audio controls="controls" title="播放沦陷">
+			<source src="music/mp3/沦陷.mp3" type="audio/mpeg">
+		<embed height="100" width="100" src="music/mp3/沦陷.mp3"/></audio> 
+		 <audio controls="controls" title="播放泡沫">
+			<source src="music/mp3/泡沫.mp3" type="audio/mpeg">
+		<embed height="100" width="100" src="music/mp3/泡沫.mp3"/></audio> 
+		 <audio controls="controls" title="播放还是分开">
+			<source src="music/mp3/还是分开.mp3" type="audio/mpeg">
+		<embed height="100" width="100" src="music/mp3/还是分开.mp3"/></audio> 
+		 <audio controls="controls" title="播放落单恋人">
+			<source src="music/mp3/落单恋人.mp3" type="audio/mpeg">
+		<embed height="100" width="100" src="music/mp3/落单恋人.mp3"/></audio> 
+		 <audio controls="controls" title="播放缺氧">
+			<source src="music/mp3/缺氧.mp3" type="audio/mpeg">
+		<embed height="100" width="100" src="music/mp3/缺氧.mp3"/></audio> 
+		 <audio controls="controls" title="播放沦陷">
+			<source src="music/mp3/沦陷.mp3" type="audio/mpeg">
+		<embed height="100" width="100" src="music/mp3/沦陷.mp3"/></audio> 
+		 <audio controls="controls" title="播放泡沫">
+			<source src="music/mp3/泡沫.mp3" type="audio/mpeg">
+		<embed height="100" width="100" src="music/mp3/泡沫.mp3"/></audio> 
+		 <audio controls="controls" title="播放还是分开">
+			<source src="music/mp3/还是分开.mp3" type="audio/mpeg">
+		<embed height="100" width="100" src="music/mp3/还是分开.mp3"/></audio> 
+		 <audio controls="controls" title="播放落单恋人">
+			<source src="music/mp3/落单恋人.mp3" type="audio/mpeg">
+		<embed height="100" width="100" src="music/mp3/落单恋人.mp3"/></audio> 
+		 <audio controls="controls" title="播放缺氧">
+			<source src="music/mp3/缺氧.mp3" type="audio/mpeg">
+		<embed height="100" width="100" src="music/mp3/缺氧.mp3"/></audio> 
+		 <audio controls="controls" title="播放沦陷">
+			<source src="music/mp3/沦陷.mp3" type="audio/mpeg">
+		<embed height="100" width="100" src="music/mp3/沦陷.mp3"/></audio> 
+		 <audio controls="controls" title="播放泡沫">
+			<source src="music/mp3/泡沫.mp3" type="audio/mpeg">
+		<embed height="100" width="100" src="music/mp3/泡沫.mp3"/></audio> 
+		 <audio controls="controls" title="播放还是分开">
+			<source src="music/mp3/还是分开.mp3" type="audio/mpeg">
+		<embed height="100" width="100" src="music/mp3/还是分开.mp3"/></audio> 
+		 <audio controls="controls" title="播放落单恋人">
+			<source src="music/mp3/落单恋人.mp3" type="audio/mpeg">
+		<embed height="100" width="100" src="music/mp3/落单恋人.mp3"/></audio> 
+		 <audio controls="controls" title="播放缺氧">
+			<source src="music/mp3/缺氧.mp3" type="audio/mpeg">
+		<embed height="100" width="100" src="music/mp3/缺氧.mp3"/></audio> 
+		 <audio controls="controls" title="播放沦陷">
+			<source src="music/mp3/沦陷.mp3" type="audio/mpeg">
+		<embed height="100" width="100" src="music/mp3/沦陷.mp3"/></audio> 
+		 <audio controls="controls" title="播放泡沫">
+			<source src="music/mp3/泡沫.mp3" type="audio/mpeg">
+		<embed height="100" width="100" src="music/mp3/泡沫.mp3"/></audio> 
+		 <audio controls="controls" title="播放落单恋人">
+			<source src="music/mp3/落单恋人.mp3" type="audio/mpeg">
+		<embed height="100" width="100" src="music/mp3/落单恋人.mp3"/></audio> 
+		 <audio controls="controls" title="播放缺氧">
+			<source src="music/mp3/缺氧.mp3" type="audio/mpeg">
+		<embed height="100" width="100" src="music/mp3/缺氧.mp3"/></audio> 
+		 <audio controls="controls" title="播放沦陷">
+			<source src="music/mp3/沦陷.mp3" type="audio/mpeg">
+		<embed height="100" width="100" src="music/mp3/沦陷.mp3"/></audio> 
+		 <audio controls="controls" title="播放泡沫">
+			<source src="music/mp3/泡沫.mp3" type="audio/mpeg">
+		<embed height="100" width="100" src="music/mp3/泡沫.mp3"/></audio> 
+		 <audio controls="controls" title="播放还是分开">
+			<source src="music/mp3/还是分开.mp3" type="audio/mpeg">
+		<embed height="100" width="100" src="music/mp3/还是分开.mp3"/></audio> 
+		 <audio controls="controls" title="播放落单恋人">
+			<source src="music/mp3/落单恋人.mp3" type="audio/mpeg">
+			</marquee></div>
+
+<h2 align="center"><font color="red">一些自己喜欢的文案</h2></font>
+<div class="card1"><input type="button" value="点击切换背景颜色" id="btn">
+<div class="fakeimg">很喜欢一段话："如果要谈恋爱就谈能结婚的，不要整天只会早安 晚安 我爱你之类的，我是在跟你谈恋爱，谈未来，不是在玩过家家，我很认真，很慎重，世界上有很多迷人的花，但我更喜欢有结果的树，比起遇见，我更想与你终老”</div></div>
+<div class="card2">
+<div class="fakeimg">要慢慢长大，我们都在悄无声息中变成了大人，不开心的时候就抬头看看星星吧 ！要允许自己短暂的难过， 那是漫长人生中能偷偷喘息的机会，不妨大胆一些，反正我们都不能活着离开这个世界</div>
+</div>
+<div class="card3">
+<div class="fakeimg">“Be hopeful no matter where you are”<br/>
+“无论身处何方都要满怀希望”</div>
+</div>
+<div class="card4">
+<div class="fakeimg">其实我已经很满意了，我至少我知道你的名字，听过你的声音，近距离聊过天，见过你的眼睛，我很幸运，即使我很难过。</div>
+</div>
+<div class="card5">
+<div class="fakeimg">In this short life<br/>
+这短短的一生<br/>
+We will lose everything eventually<br/>
+我们最终都会失去<br/>
+You should be bold<br/>
+你不妨大胆一些<br/>
+To love one person<br/>
+去爱一个人<br/>
+To climb a mountain<br/>
+攀一座山<br/>
+And to catch dream<br/>
+追一个梦</div>
+</div>
+<div class="card6">
+<div class="fakeimg">洗澡放歌是因为喜欢听，
+上厕所带手机是因为无聊，
+睡觉侧面是因为舒服，
+坐车靠窗是因为要欣赏沿途风景，
+拜托，我们都十几岁，
+没有那么多故事.</div>
+</div>
+<div class="card7">
+<div class="fakeimg">“你看，你不努力，除了年龄在涨，肚子在胀，头发变少，容颜变老，你买不起的还是买不起，你喜欢的人还是和你无关”</div>
+</div>
+<div class="card8">
+<div class="fakeimg">“很奇怪，我们不屑与他人为伍，却害怕自己与众不同”</div>
+</div>
+<div class="card9">
+<div class="fakeimg">“羽毛球就像是我给你的心 不是被打回来就是落在地上”</div>
+</div>
+<div class="card10">
+<div class="fakeimg">和喜欢的人在一起<br/>
+除了喜欢 <br/>
+没有一件事顺心 <br/>
+和不喜欢的人在一起 <br/>
+除了没有心动 <br/>
+干啥都很轻松</div>
+</div>
+<div class="card11">
+<div class="fakeimg">大多数人都活成自己最讨厌的样子。而我不一样，努力活成最优秀最棒的自己。</div>
+</div>
+<div class="card12">
+<div class="fakeimg">廉价的爱情我不配，庸俗的金钱我最值得</div>
+</div>
+<div class="card13">
+<div class="fakeimg">爱因斯坦曾经说过这样一句话，一切都是安排好的，对呀一切都是安排好的，你遇见她也是，你错过她也是。
+他:那你还爱她吗。
+爱啊！
+我现在就恨不得去找她，但是没有用。
+山鸟与鱼不同路，从此山水不相逢。
+什么意思，
+意思就是
+如果你现在不够优秀，即使遇见了也不配拥有！</div>
+</div>
+<div class="card14">
+<div class="fakeimg">手机一天没响过了 今天拿去修 结果维修师傅说手机没坏 只不过没人给我发信息而已 我直接就给师傅跪下了 求他别说了</div>
+</div>
+<div class="card15">
+<div class="fakeimg">有些人的出现 原本就是插曲 就不要当成主题曲 也不是为了大结局而来</div>
+</div>
+<div class="card16">
+<div class="fakeimg">你可以拦着外面的野花靠近他 却架不住他自己走过去赏花</div>
+</div>
+<div class="card17">
+<div class="fakeimg">你我之外还有日月对峙 百万亩玫瑰晨绽夜凋</div>
+</div>
+<div class="card18">
+<div class="fakeimg">日子还长 慢慢收集暖风和星光 再见面时让你拥个满怀</div>
+</div>
+<div class="card19">
+<div class="fakeimg">你们听过洗衣机式恋爱吗？就是先泡你，再围着你转，然后纠缠不清，然后把你榨干，最后丢在一边晾起</div>
+</div>
+<div class="card20">
+<div class="fakeimg">要记住，无论最后我们生流到什么样子，曾经对你的好都是真的。</div>
+</div>
+<div class="card21">
+<div class="fakeimg">别听世俗的耳语，去看自己喜欢的风景</div>
+</div>
+<div class="card22">
+<div class="fakeimg">在一起都不快乐 分开又有什么难过的</div>
+</div>
+<div class="card3">
+<div class="fakeimg">彩礼和嫁妆是两个家庭帮助一个新的家庭，而不是一个家庭给另一个家庭扶贫</div>
+</div>
+<div class="card1">
+<div class="fakeimg">“什么叫家？一个当你想回去而别人不能拒你于门外的地方。”
+——佛罗斯特</div>
+</div>
+<div class="card2">
+<div class="fakeimg">世界上没有真正的感同身受，双标才是人类的本质</div>
+</div>
+<div class="card3">
+<div class="fakeimg">“难道不觉得认真爱人很有活力吗，玩弄感情有什么好洋洋得意的，浑身上下透着傻逼 ”</div>
+</div>
+<div class="card4">
+<div class="fakeimg">有人喜欢玩养成类游戏吗 每天给我一百块 看我茁壮成长</div>
+</div>
+<div class="card5">
+<div class="fakeimg">靠近火堆，你能感受到温度，但是你不添柴，火堆终究会熄灭</div>
+</div>
+<div class="card6">
+<div class="fakeimg">月光下有两个影子，一个是我的，另一个也是我的</div>
+</div>
+<div class="card7">
+<div class="fakeimg">一人难顺百人意 百人难顺一人心 做自己就好</div>
+</div>
+<div class="card8">
+<div class="fakeimg">万物皆有裂痕，那是光照进来的地方</div>
+</div>
+<div class="card9">
+<div class="fakeimg">当代青年：热情洋溢的加入每一个群聊，然后消息免打扰</div>
+</div>
+<div class="card10">
+<div class="fakeimg">频率相似的人顺其自然就会聚在一起，磁场不合的人讲多少话都在翻山越岭</div>
+</div>
+<div class="card11">
+<div class="fakeimg">多年后 人们从语文课本里学到了除夕一岁爆竹一岁除 问老师烟花爆竹是什么呀 怎么没见过 老师亲切的回答道 这是违法犯罪活动</div>
+</div>
+<div class="card12">
+<div class="fakeimg">“在等待的日子里，刻苦读书，谦卑做人，养在深根，日后才能枝繁叶茂”</div>
+</div>
+<div class="card13">
+<div class="fakeimg">“铁树不会开花 乌鸦只会谩骂”</div>
+</div>
+<div class="card14">
+<div class="fakeimg">未来不就是现在积累而成的吗?</div>
+</div>
+<div class="card15">
+<div class="fakeimg">每天努力，积极向上，机会总是留给有准备的人</div>
+</div>
+<div class="card16">
+<div class="fakeimg">与其在意别人对你的看法，不如经营好自己</div>
+</div>
+<div class="card17">
+<div class="fakeimg">自己喜欢的东西。就不要再征询他人意见了。人生这点责任。自己负。</div>
+</div>
+<div class="card18">
+<div class="fakeimg">半山腰的人太挤了，我想去山顶看看.</div>
+</div>
+<div class="card19">
+<div class="fakeimg">你若盛开 蝴蝶自来.</div>
+</div>
+<div class="card20">
+<div class="fakeimg">“和你刚认识的时候真好，你跟我打好多电话，能陪我聊天，聊到凌晨都不觉得困，现在不行了，我焦虑暴躁，你敷衍不堪”</div>
+</div>
+<div class="card21">
+<div class="fakeimg">“永远笨拙且热泪盈眶的以为爱足以抵挡一切，有人说我是为爱而活的人，这大概是我听过最好和最坏的话”</div>
+</div>
+<div class="card22">
+<div class="fakeimg">“后来啊，只有前程似锦，再无年少欢喜”</div>
+</div>
+<div class="card3">
+<div class="fakeimg">恋爱经验真是个讽刺的词，有和没有都会有人嘲笑你。</div>
+</div>
+<div class="card5">
+<div class="fakeimg">我开始意识到每个人只能站在自己的认知度上去思考 所以如果有人跟你说柠檬是甜的 你只需要对他说 是的 那你多吃点</div>
+</div>
+<div class="card15">
+<div class="fakeimg">“若我收拾行李 无论是在凌晨还是那悄无声息的夜里 随遇而安 随心向往 或者 被寒冷和饥饿折磨的体无完肤 不仅如此 我愿一生漂泊”</div>
+</div>
+<div class="card6">
+<div class="fakeimg">“在朋友圈点赞这方面 不得不说自己有一点“小心眼” 对那种经常给自己点赞的人的好感会特别高”</div>
+</div>
+<div class="card17">
+<div class="fakeimg">喜欢你是蓄谋已久的决策。</div>
+</div>
+<div class="card18">
+<div class="fakeimg">“不要畏首畏尾 去尽情的浪费这一生吧 你这粒尘埃啊 什么都不算的”</div>
+</div>
+<div class="card19">
+<div class="fakeimg">“你恋痛 感情里的心碎 难过 冷战都让你有种心脏被攥紧的快感 你喜欢狗血小说烂俗港剧一样的爱情 你会刻意制造遗憾 即使自己脖子上被系上死结 你也说这是爱”
+
+</div>
+</div>
+<div class="card10">
+<div class="fakeimg">“你日后要长大黑黑的路要自己走，由自己的嘴巴跟自己讲一声要争气”</div>
+</div>
+<div class="card3">
+<div class="fakeimg">“摆烂是一种神奇的人生态度，你会发现凡事只要都秉承着摆烂的态度，你就不会觉得过于难受，脱离抑郁的第一步就是狠狠的摆烂，狠狠的摆吧。”</div>
+</div>
+<div class="card5">
+<div class="fakeimg">最喜欢的事情是被朋友放在朋友圈不管是聊天截图还是照片还是礼物反正和自己有关的一切只要被对方放在空间就会在心里高兴“她在炫耀我!”</div>
+</div>
+<div class="card14">
+<div class="fakeimg">我们可以转身 但是不必回头 即使有一天 发现自己错了 也应该转身 大步朝着对的方向去 而不是一直回头怨自己错了</div>
+</div>
+<div class="card5">
+<div class="fakeimg">那些被别人浪费的爱意和善意，我们本该用在自己身上。</div>
+</div>
+<div class="card15">
+<div class="fakeimg">“一个哦一个嗯一个额一个呃一个逗号一个句号一个省略号一个所以呢一个然后呢 足以毁了我想对你说的所有话”</div>
+</div>
+<div class="card6">
+<div class="fakeimg">乾坤未定  你我皆是黑马  乾坤已定  那就扭转乾坤.</div>
+</div>
+<div class="card17">
+<div class="fakeimg">屈指可数的日子里  我们都要坚持下去.</div>
+</div>
+<div class="card19">
+<div class="fakeimg">始终认为 专一是男生最高级的性感</div>
+</div>
+<div class="card10">
+<div class="fakeimg">因为长情是古董 所以假货特别多</div>
+</div>
+<div class="card3">
+<div class="fakeimg">爱意随风起，风止意难平.<br/>
+落日归山海，山海藏深意.</div>
+</div>
+
+
+
+<div class="card5">
+<div class="fakeimg">我只是个普通的男孩子，个子不高，没有出众的长相，没有富裕的家庭，被抛弃很正常，你想错过就错过吧.
+</div>
+</div>
+<div class="card14">
+<div class="fakeimg">那你呢?<br/>又在爱里风生水起了吗?<br/>有人顶替我了吗?<br/>把我们一起做的事再做一遍了吗</div>
+</div>
+<div class="card18">
+<div class="fakeimg">我希望我们，高调公开，低调恋爱，保持深爱，谁也别先离开谁，困了就睡，醒了有我，互相包容，一直被爱，来日方长，我们带着诚意慢慢来.</div>
+</div>
+<div class="card10">
+<div class="fakeimg">祝你有一天能和最重要的人再次相逢!</div>
+</div>
+
+
+		<div class="plq">
+			<p class="p">评<span id="zi">论</span><span id="lv">区</span><span id="huang">:</span></p>
+		<form action="#" method="post">
+		<div class="juzhong"><textarea rows="8" cols="150" placeholder="上传一下你认为很好的文案叭!"></textarea>
+		<input type="submit">
+			</div>
+		</form>
+		</div>
+
+
+
+
+<div class="card4">
+<h2 align="center">未完待续。。。</h2>
+</div>
+<hr></body>
+
+<script>
+var btn = document.getElementById("btn");
+var body = document.body;
+let array = ["#ffff00", "#00ff00", "#00ffff", "#ff0000", "#ff7f00", "#0000ff", "#8b00ff","#ffd700","#ff8c00","red", "blue", "yellow", "white", "black", "green", "orange","#20b2aa","#191970","#ff00ff","#ff69b4","#fff5ee","#f4a460","#d2691e","#e6e6fa","#fff0f5"];
+let index = 0;
+btn.onclick = function () {
+body.style.backgroundColor = array[index];
+index = (index + 1) % array.length;
+}
+</script>
+</html>
